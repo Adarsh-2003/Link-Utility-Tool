@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Link Utility Tool</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <main class="shell">
+        <header class="header">
+          <h1 class="title">Link Utility Tool</h1>
+          <p class="subtitle">
+            Paste messy URLs from comments, OCR, or chat — we strip stray
+            whitespace so the link works and you can copy it in one tap.
+          </p>
+        </header>
+
+        <section class="panel" aria-labelledby="paste-label">
+          <label id="paste-label" class="label" for="input">Paste link</label>
+          <textarea
+            id="input"
+            class="textarea"
+            rows="4"
+            spellcheck="false"
+            autocomplete="off"
+          ></textarea>
+
+          <div class="actions">
+            <button type="button" id="cleanBtn" class="btn btn-primary">
+              Clean link
+            </button>
+            <button type="button" id="copyBtn" class="btn btn-ghost" disabled>
+              Copy clean link
+            </button>
+          </div>
+
+          <p id="status" class="status" role="status" aria-live="polite"></p>
+
+          <div id="resultWrap" class="result-wrap hidden">
+            <span class="label">Working link</span>
+            <a id="resultLink" class="result-link" href="#" target="_blank" rel="noopener noreferrer"></a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>
+          Vibe coded with fun by
+          <a
+            href="https://adarshgupta.works"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-link"
+          >
+            Adarsh Gupta
+          </a>
+          🗿
+        </p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
